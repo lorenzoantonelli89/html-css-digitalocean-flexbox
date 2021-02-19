@@ -5,44 +5,123 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
 .container-center{
-  width: 80%;
+  width: 90%;
   margin: auto;
   /* regole debug */
-  min-height: 200px;
+  /* min-height: 200px; */
   background-color: lightgreen;
   border: 2px solid black;
 }
 
 .grey{
-  background-color: lightgrey;
+  background-color: #f3f5f9;
 }
 
 .blue{
-  background-color: blue;
+  background: linear-gradient(#0046c4,
+  #0034b1, #00209c);
 }
 
 .textcenter{
   text-align: center;
 }
 
-/* regole header */
-nav.container-center{
-  display: flex;
-  justify-content: space-between;
+.textwhite{
+  color: #fff;
 }
 
-nav.container-center div{
-  /* regole debug */
-  min-width: 250px;
-  min-height: 100px;
-  background-color: red;
-  border: 1px solid black;
+.textgrey{
+  color: #9ca5b6;
 }
+
+.textverdeacqua{
+  color: #00d1d0;
+}
+
+.textbluacceso{
+  color: #227dfe;
+}
+
+.textdarkblu{
+  color: #031c4e;
+}
+
+/* regole header */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* nav>div{
+  min-width: 33%;
+} */
+
+.lgmenu li {
+  display: inline-block;
+}
+
+.logodigital img{
+  max-height: 50px;
+}
+
+.ham {
+  display: none;
+}
+
+/* media nav */
+
+@media screen and (max-width:991px) {
+
+  .centratura {
+    width: 95%;
+  }
+
+  nav>div{
+    max-width: 50%;
+  }
+
+  /* regole hamburger e drop */
+  .ham {
+    display: block;
+  }
+  .dropdown{
+    display: none;
+  }
+
+
+  .ham:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top:90px;
+    width: 100%;
+    border: solid 1px #000;
+  }
+
+  .lgmenu {
+    display: none;
+  }
+}
+
 /* regole jumbotron */
 #jumbotron{
-  /* regole debug */
-  background-color: blue;
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
 }
 
 #jumbotron>.container-center{
@@ -52,19 +131,80 @@ nav.container-center div{
 }
 
 #jumbotron>.container-center>div{
-  /* regole debug */
-  width: 400px;
-  min-height: 200px;
-  background-color: red;
-  border: 1px solid black;
+  width: 40%;
 }
+
+#jumbotron h1{
+  font-size: 55px;
+}
+
+#jumbotron p{
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.formjumbo{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formjumbo h2{
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.form-control{
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.list-group-item{
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 1px #f3f5f9;
+  margin-top: 20px;
+}
+
+.list-group-item:first-child{
+  background-color: #579aff;
+  margin-bottom: 10px;
+}
+
+.list-group-item:last-child{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#jumbotron img{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  height: 25px;
+}
+
+#jumbotron p{
+  padding-top: 5px;
+}
+
+
 
 /* regole main */
 
 /* sezione loghi */
-#sectfirst .container-flex{
+#sectfirst ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* sezione deploy and scale */

@@ -2,8 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>Digital Ocean Flexbox</title>
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- lib fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- file css -->
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
 
@@ -11,13 +18,49 @@
     <header>
       <nav class="container-center">
         <div class="logodigital">
-          logo
+          <img src="img/logo.png" alt="logo">
         </div>
-        <div class="list-one">
-          lista uno
+        <div class="lgmenu">
+          <ul>
+            <li>
+              <a href="#">
+                Products <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">Customers</a></li>
+            <li>
+              <a href="#">
+                Community <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
         </div>
-        <div class="list-two">
-          lista 2
+        <div class="lgmenu">
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li>
+              <a href="#">
+              Support <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </div>
+        <!-- hamburger a scomparsa -->
+        <div class="ham">
+          <i class="fas fa-bars"></i>
+
+          <!-- dropdown -->
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">link N</a></li>
+              <li><a href="#">link N</a></li>
+              <li><a href="#">link N</a></li>
+              <li><a href="#">link N</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -26,10 +69,31 @@
     <div id="jumbotron">
       <div class="container-center">
         <div class="textjumbo">
-          text jumbo
+          <h1 class="textwhite">The simplest cloud platform for developers & teams</h1>
+          <p class="textwhite">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, whether you're running one virtual machine or ten thousand.
+          </p>
         </div>
-        <div class="form jumbo">
-          form del jumbo
+        <div class="formjumbo textcenter">
+          <h2 class="textdarkblu">Deploy your app in second.</h2>
+          <h2><a class="textbluacceso" href="#">Get started now.</a></h2>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item active">
+                Creat your account
+              </a>
+              <a href="#" class="list-group-item"><img src="img/google-icon.png" alt="">Sign up with google
+              </a>
+            </div>
+          </form>
+          <span>By signing up you agree to the <a href="#">Terms of Service
+          </a>
+        </span>
         </div>
 
       </div>
@@ -41,20 +105,32 @@
       <!-- sezione loghi -->
       <section id="sectfirst" class="grey">
         <div class="container-center">
-          <h2 class="textcenter">sezione loghi</h2>
-          <div class="container-flex">
-            <div class="loghi">
-              <img src="" alt="logo">
-              <img src="" alt="logo">
-              <img src="" alt="logo">
-              <img src="" alt="logo">
-              <img src="" alt="logo">
-              <img src="" alt="logo">
-            </div>
-          </div>
+          <h2 class="textcenter textgrey">
+            INNOVATIVE BUSINESS TRUST DIGITALOCEAN
+          </h2>
+            <ul>
+              <li>
+                <img src="img/docker.svg" alt="docker">
+              </li>
+              <li>
+                <img src="img/gitlab.svg" alt="gitlab">
+              </li>
+              <li>
+                <img src="img/slack.svg" alt="slack">
+              </li>
+              <li>
+                <img src="img/hashicorp.svg" alt="hashicorp">
+              </li>
+              <li>
+                <img src="img/hashicorp.svg" alt="hashicorp">
+              </li>
+              <li>
+                <img src="img/splunklogo.svg" alt="splunk">
+              </li>
+            </ul>
           <div class="textcenter">
-            <a href="#">
-              link loghi
+            <a class="textbluacceso" href="#">
+              View customer stories <i class="fas fa-chevron-right"></i>
             </a>
           </div>
         </div>
