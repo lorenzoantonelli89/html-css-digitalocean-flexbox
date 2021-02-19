@@ -1,0 +1,161 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-center{
+  width: 80%;
+  margin: auto;
+  /* regole debug */
+  min-height: 200px;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+.grey{
+  background-color: lightgrey;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.textcenter{
+  text-align: center;
+}
+
+/* regole header */
+nav.container-center{
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.container-center div{
+  /* regole debug */
+  min-width: 250px;
+  min-height: 100px;
+  background-color: red;
+  border: 1px solid black;
+}
+/* regole jumbotron */
+#jumbotron{
+  /* regole debug */
+  background-color: blue;
+}
+
+#jumbotron>.container-center{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#jumbotron>.container-center>div{
+  /* regole debug */
+  width: 400px;
+  min-height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+/* regole main */
+
+/* sezione loghi */
+#sectfirst .container-flex{
+  display: flex;
+  justify-content: center;
+}
+
+/* sezione deploy and scale */
+#sectsecond .container-flex{
+  display: flex;
+  justify-content: center;
+}
+
+.caselle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lista.caselle{
+  width: 100px;
+  height: 250px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.blocchi.caselle{
+  width: 350px;
+  height: 350px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.testinfo{
+  width: 50%;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+/* sezione designe for developers */
+#sectthird>.container-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slide{
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+/* sezione business needs */
+#sectfour .container-flex{
+  display: flex;
+  justify-content: center;
+}
+
+#sectfour .container-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.testinfo2{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+/* sezione table */
+.table{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table>table{
+  width: 50%;
+}
+
+/* sezione development digital */
+#sectsix .container-flex{
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+footer .container-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.testfooter{
+  width: 200px;
+  height: 300px;
+  background-color: red;
+  border: 1px solid black;
+}
