@@ -67,10 +67,6 @@ nav{
   position: relative;
 }
 
-/* nav>div{
-  min-width: 33%;
-} */
-
 .lgmenu li {
   display: inline-block;
 }
@@ -196,8 +192,6 @@ nav{
   padding-top: 5px;
 }
 
-
-
 /* regole main */
 
 /* sezione loghi */
@@ -205,40 +199,31 @@ nav{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 30px auto;
 }
 
 /* sezione deploy and scale */
 #sectsecond .container-flex{
+  width: 70%;
   display: flex;
   justify-content: center;
-}
-
-.caselle{
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.lista.caselle{
-  width: 100px;
-  height: 250px;
-  background-color: red;
-  border: 1px solid black;
+#deploy{
+  width: 20%;
 }
 
+#deploy li{
+  border-left: 3px solid #d5d5d5;
+  color: #78829c;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
 .blocchi.caselle{
-  width: 350px;
-  height: 350px;
-  background-color: red;
-  border: 1px solid black;
+  width: 20%;
 }
 
-.testinfo{
-  width: 50%;
-  height: 100px;
-  background-color: yellow;
-  border: 1px solid black;
-}
 /* sezione designe for developers */
 #sectthird>.container-center{
   display: flex;
