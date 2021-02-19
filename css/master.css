@@ -20,10 +20,11 @@ ul{
 .container-center{
   width: 90%;
   margin: auto;
-  /* regole debug */
-  /* min-height: 200px; */
-  background-color: lightgreen;
-  border: 2px solid black;
+}
+
+section, footer{
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .grey{
@@ -124,10 +125,7 @@ nav{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-#jumbotron>.container-center>div{
-  width: 40%;
+  padding: 60px 0;
 }
 
 #jumbotron h1{
@@ -139,10 +137,15 @@ nav{
   font-weight: 300;
 }
 
+.textjumbo{
+  flex-basis: 60%;
+}
+
 .formjumbo{
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
+  flex-basis: 40%;
 }
 
 .formjumbo h2{
@@ -202,16 +205,29 @@ nav{
   margin: 30px auto;
 }
 
+/* #sectfirst li{
+  flex-basis: calc(100% / 6);
+} */
+
+/* media loghi */
+@media screen and (max-width:768px){
+  #sectfirst li{
+    flex-basis: 50%;
+  }
+}
+
+
 /* sezione deploy and scale */
 #sectsecond .container-flex{
   width: 70%;
+  margin: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 #deploy{
-  width: 20%;
+  flex-basis: 20%;
 }
 
 #deploy li{
@@ -221,7 +237,30 @@ nav{
   padding-left: 10px;
 }
 .blocchi.caselle{
-  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+}
+
+.testinfo{
+  flex-basis: 40%;
+}
+
+/* media sezione 2 */
+@media screen and (max-width:768px){
+  #deploy{
+    flex-basis: 100%;
+  }
+
+  .blocchi.caselle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .testinfo{
+    flex-basis: 100%;
+  }
 }
 
 /* sezione designe for developers */
@@ -232,46 +271,137 @@ nav{
   text-align: center;
 }
 
-.slide{
-  width: 400px;
-  height: 400px;
-  background-color: red;
+#sectthird h2, #sectthird p{
+  margin-bottom: 30px;
 }
+
+/* Riga designed con slide */
+.slide{
+  position: relative;
+}
+.slide img{
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+  /* Proprietà icone slide img e slide div */
+.slide i, .slide-window a:not(.blue-link) i{
+  font-size: 30px;
+  vertical-align: middle;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+  /* Icone scompaiono a Ypx */
+@media all and (max-width: 768px) {
+  .slide i, .slide-window i{
+    display: none;
+  }
+}
+  /* Icona freccia SX */
+.slide i.left, .slide-window i.left{
+  color: grey;
+  margin-right: 2%;
+  top: 50%;
+  left: -30px;
+}
+  /* Icona freccia DX */
+.slide i.right, .slide-window i.right{
+  color: navy;
+  margin-left: 2%;
+  top: 50%;
+  right: -30px;
+}
+  /* Pallini blu slide */
+.blue-dot{
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid dodgerblue;
+  border-radius: 50%;
+}
+.blue-dot:hover, .blue-dot.clicked{
+    background-color: dodgerblue;
+}
+
 
 /* sezione business needs */
-#sectfour .container-flex{
-  display: flex;
-  justify-content: center;
-}
-
 #sectfour .container-flex{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.testinfo2{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  border: 1px solid black;
+#sectfour h2{
+  padding-bottom: 40px;
 }
+
+.features{
+  flex-basis: 30%;
+}
+
+/* media sezione 4 */
+@media screen and (max-width:768px){
+  .features{
+    flex-basis: 100%;
+  }
+}
+
 
 /* sezione table */
 .table{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .table>table{
-  width: 50%;
+  flex-basis: 50%;
+  margin-top: 30px;
 }
 
+.textverdeacqua{
+  padding-left: 105px;
+}
+
+/* media table */
+@media screen and (max-width:768px){
+  .table>table{
+    flex-basis: 100%;
+  }
+
+  .textverdeacqua{
+    padding-left: 45%;
+  }
+}
 /* sezione development digital */
 #sectsix .container-flex{
   display: flex;
   justify-content: center;
 }
+
+.slide{
+  background-color: white;
+  position: relative;
+  min-height: 150px;
+  padding: 50px 10px;
+  width: 100%;
+  margin: 40px 0 20px;
+}
+.slide img{
+  margin: 20px 10px 10px;
+  width: 220px;
+  max-width: 85%;
+}
+.slide p{
+  margin: 10px;
+}
+.slide h5{
+  margin: 15px 10px 0;
+}
+.slide div{
+  margin-bottom: 20px;
+}
+
 
 /* footer */
 footer .container-flex{
