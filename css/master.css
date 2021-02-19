@@ -204,6 +204,17 @@ nav{
   padding-top: 5px;
 }
 
+/* media jumbo */
+@media screen and (max-width:768px){
+  .textjumbo{
+    flex-basis: 100%;
+  }
+
+  .formjumbo{
+    flex-basis: 100%;
+  }
+}
+
 /* regole main */
 
 /* sezione loghi */
