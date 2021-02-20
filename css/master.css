@@ -61,6 +61,13 @@ section, footer{
 }
 
 /* regole header */
+header{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 900;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -128,6 +135,7 @@ nav{
 #jumbotron{
   background-image: url("../img/jumbo.svg");
   background-size: cover;
+  padding-top: 100px;
 }
 
 #jumbotron>.container-center{
@@ -148,6 +156,7 @@ nav{
 
 .textjumbo{
   flex-basis: 60%;
+  padding-right: 100px;
 }
 
 .formjumbo{
@@ -208,6 +217,7 @@ nav{
 @media screen and (max-width:768px){
   .textjumbo{
     flex-basis: 100%;
+    padding-bottom: 50px;
   }
 
   .formjumbo{
@@ -259,29 +269,33 @@ nav{
   padding-bottom: 30px;
   padding-left: 10px;
 }
-.blocchi.caselle{
+
+#boxinfodeploy{
   display: flex;
   flex-wrap: wrap;
   flex-basis: 80%;
 }
 
-.testinfo{
+.infodeploy{
   flex-basis: 40%;
+  padding-right: 50px;
+  padding-bottom: 30px;
 }
 
 /* media sezione 2 */
 @media screen and (max-width:768px){
   #deploy{
     flex-basis: 100%;
+    padding-bottom: 60px;
   }
 
-  .blocchi.caselle{
+  #boxinfodeploy{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
   }
 
-  .testinfo{
+  .infodeploy{
     flex-basis: 100%;
   }
 }
@@ -366,6 +380,7 @@ nav{
 @media screen and (max-width:768px){
   .features{
     flex-basis: 100%;
+    padding-bottom: 50px;
   }
 }
 
@@ -390,10 +405,6 @@ nav{
 @media screen and (max-width:768px){
   .table>table{
     flex-basis: 100%;
-  }
-
-  .textverdeacqua{
-    padding-left: 45%;
   }
 }
 /* sezione development digital */
@@ -452,5 +463,6 @@ footer ul{
 @media screen and (max-width:768px){
   .linkfooter{
     flex-basis: 100%;
+    padding-bottom: 60px;
   }
 }
